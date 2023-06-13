@@ -1,0 +1,20 @@
+.styled-div {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+  }
+
+  .styled-div h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .styled-div p {
+    margin-bottom: 10px;
+  }

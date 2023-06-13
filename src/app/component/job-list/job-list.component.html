@@ -1,0 +1,17 @@
+<div>
+    <div style="font-size: 24px; font-weight: bold; color: #333;">Jobs by skills</div>
+    <app-job-offer *ngFor="let j of jobs$|async  " [job]="j"></app-job-offer>
+
+  </div>
+
+  <div>
+    <div style="font-size: 24px; font-weight: bold; color: #333;">Jobs by location</div>
+    <app-job-offer *ngFor="let j of jobslocation$|async " [job]="j"></app-job-offer>
+
+  </div>
+
+  <div>
+    <div style="font-size: 24px; font-weight: bold; color: #333;">Jobs by industry</div>
+    <app-job-offer *ngFor="let j of jobsindustry$|async " [job]="j"></app-job-offer>
+
+  </div>
