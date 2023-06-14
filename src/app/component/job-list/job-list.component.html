@@ -1,17 +1,40 @@
+
+
+<div>
+  <button routerLink="/newoffer" class="my-button">create a job offer</button>
+</div>
+
+
 <div>
     <div style="font-size: 24px; font-weight: bold; color: #333;">Jobs by skills</div>
     <app-job-offer *ngFor="let j of jobs$|async  " [job]="j"></app-job-offer>
 
   </div>
 
-  <div>
+  <!-- <div>
     <div style="font-size: 24px; font-weight: bold; color: #333;">Jobs by location</div>
     <app-job-offer *ngFor="let j of jobslocation$|async " [job]="j"></app-job-offer>
 
-  </div>
+  </div> -->
+
+  <!-- <div *ngFor="let location of locations">
+    <h3>{{ location }}</h3>
+    <ul>
+      <li *ngFor="let job of jobsLocationPairs[location]">{{ job.title }}</li>
+    </ul>
+  </div> -->
+  
+  
 
   <div>
     <div style="font-size: 24px; font-weight: bold; color: #333;">Jobs by industry</div>
     <app-job-offer *ngFor="let j of jobsindustry$|async " [job]="j"></app-job-offer>
 
+  </div>
+
+  <div style="font-size: 24px; font-weight: bold; color: #333;">Jobs by location</div>
+  <div *ngFor="let location of locations" class="location-container">
+    <h3 class="location-heading">{{ location }}</h3>
+    <app-job-offer *ngFor="let job of jobsLocationPairs[location] " [job]="job"></app-job-offer>
+    <p *ngIf="jobsLocationPairs[location]?.length === 0" class="no-jobs">No jobs available for this location</p>
   </div>

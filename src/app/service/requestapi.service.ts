@@ -26,6 +26,21 @@ export class RequestapiService {
   return this.http.post(this.url+"recommendJobsByLocation", body, { headers: headers });
 }
 
+recommendJobsByLocations(userId: string, locations: string[]) {
+  const locationJobPairs: { [key: string]: any[] } = {};
+
+  const requests = locations.map((location: string) =>
+    this.recommendJobsByLocation(userId, location)
+      .toPromise()
+      .then((jobs: any) => {
+        locationJobPairs[location] = jobs;
+      })
+  );
+
+  return Promise.all(requests).then(() => locationJobPairs);
+}
+
+
 recommendJobsByIndustry(userId:string){
   const body = { user_id: userId };
   const headers = new HttpHeaders({ 'Content-Type': 'application/json' });

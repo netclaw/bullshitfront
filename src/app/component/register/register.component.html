@@ -16,16 +16,14 @@
                     <div class="form-outline form-white mb-4">
 
                       
-                      <label class="form-label" for="userId">User ID:</label>
-                      <input type="text" id="userId" formControlName="userId"class="form-control form-control-lg">
+                      <label class="form-label" for="user_id">User ID:</label>
+                      <input type="text" id="user_id" formControlName="user_id"class="form-control form-control-lg">
                       <div *ngIf="this.signUpForm.get('userId')?.invalid && (this.signUpForm.get('userId')?.touched)"
     class="alert alert-danger">
                         <div class="form-label" *ngIf="this.signUpForm.get('userId')?.errors?.['required']">
                           userId is required.
                         </div>
-                        <!-- <div class="form-label" *ngIf="this.signUpForm.get('userId')?.errors?.['minlength']">
-                          userId mustn't have less than 6 charcaters.
-                        </div> -->
+                       
                       </div>
 
                     </div>
@@ -33,16 +31,14 @@
                     <div class="form-outline form-white mb-4">
 
                       
-                        <label class="form-label" for="userId">skills:(comma-separated)</label>
-                        <input type="text" id="userId" formControlName="userId"class="form-control form-control-lg">
-                        <div *ngIf="this.signUpForm.get('userId')?.invalid && (this.signUpForm.get('userId')?.touched)"
+                        <label class="form-label" for="skills">skills:(comma-separated)</label>
+                        <input type="text" id="skills" formControlName="skills"class="form-control form-control-lg">
+                        <div *ngIf="this.signUpForm.get('userId')?.invalid && (this.signUpForm.get('skills')?.touched)"
       class="alert alert-danger">
-                          <div class="form-label" *ngIf="this.signUpForm.get('userId')?.errors?.['required']">
+                          <div class="form-label" *ngIf="this.signUpForm.get('skills')?.errors?.['required']">
                             skills is required.
                           </div>
-                          <!-- <div class="form-label" *ngIf="this.signUpForm.get('userId')?.errors?.['minlength']">
-                            userId mustn't have less than 6 charcaters.
-                          </div> -->
+                        
                         </div>
   
                       </div>
@@ -50,82 +46,19 @@
                       <div class="form-outline form-white mb-4">
 
                       
-                        <label class="form-label" for="userId">interests:(comma-separated)</label>
-                        <input type="text" id="userId" formControlName="userId"class="form-control form-control-lg">
-                        <div *ngIf="this.signUpForm.get('userId')?.invalid && (this.signUpForm.get('userId')?.touched)"
+                        <label class="form-label" for="interests">interests:(comma-separated)</label>
+                        <input type="text" id="interests" formControlName="interests"class="form-control form-control-lg">
+                        <div *ngIf="this.signUpForm.get('userId')?.invalid && (this.signUpForm.get('interests')?.touched)"
       class="alert alert-danger">
-                          <div class="form-label" *ngIf="this.signUpForm.get('userId')?.errors?.['required']">
+                          <div class="form-label" *ngIf="this.signUpForm.get('interests')?.errors?.['required']">
                             interests is required.
                           </div>
-                          <!-- <div class="form-label" *ngIf="this.signUpForm.get('userId')?.errors?.['minlength']">
-                            userId mustn't have less than 6 charcaters.
-                          </div> -->
+                        
                         </div>
   
                       </div>
 
-                    <!-- <div class="form-outline form-white mb-4">
-                      <input type="text" id="userName" formControlName="userName" class="form-control form-control-lg">
-                      <label class="form-label" for="userName">Full Name</label>
-
-                      <div *ngIf="this.signUpForm.get('userName')?.invalid && (this.signUpForm.get('userName')?.touched)"
-    class="alert alert-danger">
-                        <div class="form-label" *ngIf="this.signUpForm.get('userName')?.errors?.['required']">
-                          userName is required.
-                        </div>
-                      </div>
-                    </div> -->
-
-                      <!-- <div class="form-outline form-white mb-4">
-                        <input type="email" id="userEmail" formControlName="userEmail" class="form-control form-control-lg" />
-                        <label class="form-label" for="userEmail">Email</label>
-
-                        <div *ngIf="this.signUpForm.get('userEmail')?.invalid && (this.signUpForm.get('userEmail')?.touched)"
-    class="alert alert-danger">
-                        <div class="form-label" *ngIf="this.signUpForm.get('userEmail')?.errors?.['required']">
-                          Email is required.
-                        </div>
-                        <div class="form-label" *ngIf="this.signUpForm.get('userEmail')?.errors?.['email']">
-                          Email unvalid
-                        </div>
-                      </div>
-                    </div> -->
-
-                    <!-- <div class="form-outline form-white mb-4">
-                      <input type="text" id="userTel" formControlName="userTel" class="form-control form-control-lg">
-                      <label class="form-label" for="userTel">Telephone Number</label>
-
-                      <div *ngIf="this.signUpForm.get('userTel')?.invalid && (this.signUpForm.get('userTel')?.touched)"
-                      class="alert alert-danger">
-                                          <div class="form-label" *ngIf="this.signUpForm.get('userTel')?.errors?.['required']">
-                                            Telephone Number is required.
-                                          </div>
-                                          <div class="form-label" *ngIf="this.signUpForm.get('userTel')?.errors?.['pattern']">
-                                            enter a valid telephone number
-                                          </div>
-                                        </div>
-                    </div> -->
-
-                    <!-- <div class="form-outline form-white mb-4">
-                      <input type="password" id="userP" formControlName="userP" class="form-control form-control-lg">
-                      <label class="form-label" for="userP">Password</label>
-
-                      <div *ngIf="this.signUpForm.get('userP')?.invalid && (this.signUpForm.get('userP')?.touched)"
-                      class="alert alert-danger">
-                                          <div class="form-label" *ngIf="this.signUpForm.get('userP')?.errors?.['required']">
-                                            Password is required.
-                                          </div>
-                                          <div class="form-label" *ngIf="this.signUpForm.get('userP')?.errors?.['minlength']">
-                                            Password mustn't have less than 6 charcaters.
-                                          </div>
-                                        </div>
-                      
-                    </div> -->
-
-                    <!-- <div class="form-outline form-white mb-4">
-                      <input type="text" id="userAddress" formControlName="userAddress" class="form-control form-control-lg">
-                      <label class="form-label" for="userAddress">Shipping Adress</label>
-                    </div> -->
+                 
 
                     <button class="btn btn-outline-light btn-lg px-5" type="submit" (click)="onSubmit()" [disabled]="signUpForm.invalid">Register</button>
 
