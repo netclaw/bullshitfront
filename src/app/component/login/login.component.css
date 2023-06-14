@@ -1,0 +1,98 @@
+.vh-100 {
+    height: 100vh;
+  }
+  
+  .gradient-custom {
+    background: linear-gradient(to right, #667eea, #764ba2);
+  }
+  
+  .card {
+    border: none;
+  }
+  
+  .form-control {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: #fff;
+    border: none;
+  }
+  
+  .form-control:focus {
+    box-shadow: none;
+  }
+  
+  .btn-outline-light {
+    border-color: #fff;
+    color: #fff;
+  }
+  
+  .btn-outline-light:hover {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .text-white-50 {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .fw-bold {
+    font-weight: bold;
+  }
+  
+  .text-uppercase {
+    text-transform: uppercase;
+  }
+  
+  .mb-2 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1rem;
+  }
+  
+  .mb-5 {
+    margin-bottom: 1.25rem;
+  }
+  
+  .mt-4 {
+    margin-top: 1rem;
+  }
+  
+  .pt-1 {
+    padding-top: 0.25rem;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .justify-content-center {
+    justify-content: center;
+  }
+  
+  .align-items-center {
+    align-items: center;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-white {
+    color: #fff;
+  }
+  
+  .fab {
+    font-size: 1.5rem;
+    margin-right: 0.75rem;
+  }
+  
+  .router-link-active {
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .router-link-active:hover {
+    text-decoration: none;
+  }
+  

@@ -36,6 +36,7 @@ export class UserService {
     this.loggedUser=new User(user.userId,[],[]);
     // console.log(this.loggedUser);
     // this.ActiveUser.next(this.loggedUser);
+    this.router.navigate(['logged',user.userId]);
 
 
 }

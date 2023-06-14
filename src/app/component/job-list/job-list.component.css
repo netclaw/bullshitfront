@@ -1,31 +1,29 @@
 .my-button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
+    background-color: #ff3366;
     border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    transition: background-color 0.3s ease;
   }
-  
+
   .my-button:hover {
-    background-color: #45a049;
+    background-color: #e6005c;
   }
-  
+
   .location-container {
-    margin-bottom: 20px;
+    margin-top: 2rem;
   }
-  
+
   .location-heading {
-    font-size: 18px;
-    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333333;
   }
-  
-  .job-list {
-    list-style-type: disc;
+
+  .no-jobs {
+    color: #777777;
+    font-size: 16px;
+    margin-top: 1rem;
   }
-  
-  .job-item {
-    margin-bottom: 5px;
-    color: #555;
-  }
-  

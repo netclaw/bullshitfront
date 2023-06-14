@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
   }
 
   onSubmit(){
-    this.router.navigate(['logged',this.signInForm.value.userId]);
+    // this.router.navigate(['logged',this.signInForm.value.userId]);
     // console.log(this.signInForm.value)
     this.userservice.loginUser(this.signInForm.value);
     
